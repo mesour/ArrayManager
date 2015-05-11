@@ -10,7 +10,7 @@ Searches, updates, inserts and deletes on two dimensional array
 - With [Composer](https://getcomposer.org)
 
         "require": {
-            "mesour/array-manager": "~0.0.2"
+            "mesour/array-manager": "~0.0.1"
         }
 
 # Example array
