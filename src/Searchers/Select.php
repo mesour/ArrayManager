@@ -60,9 +60,11 @@ class Select extends Search {
 
 	public function orderBy($row, $sorting = 'ASC') {
 		// todo: add sorting by many columns
-		Validator::validateUnknownColumns($this->data_array, array($row => NULL));
-		if(empty($this->ordering)) {
-			$this->ordering[$row] = $sorting;
+		if(count($this->data_array) > 0) {
+			Validator::validateUnknownColumns($this->data_array, array($row => NULL));
+			if(empty($this->ordering)) {
+				$this->ordering[$row] = $sorting;
+			}
 		}
 		return $this;
 	}
